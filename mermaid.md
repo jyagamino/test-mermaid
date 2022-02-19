@@ -1,23 +1,21 @@
 ```mermaid
 classDiagram
-    Animal <|-- Duck
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
+    動物 <|-- アヒル
+    動物 <|-- 魚
+    動物 <|-- シマウマ
+    動物 : +int 年齢
+    動物 : +String 性別
+    class アヒル{
+        +String くちばしの色
+        +泳ぐ()
+        +鳴く()
     }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
+    class 魚{
+        -int サイズ
+        -食べれる()
     }
-    class Zebra{
-        +bool is_wild
-        +run()
+    class シマウマ{
+        +bool 野生
+        +走る()
     }
 ```
