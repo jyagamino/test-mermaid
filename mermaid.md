@@ -1,7 +1,23 @@
 ```mermaid
-sequenceDiagram
-  クライアント->>サーバー: 商品の検索
-  サーバー->>データベース: 商品データの取得
-  データベース-->>サーバー: 商品データの取得結果
-  サーバー-->>クライアント: 商品の検索結果
+classDiagram
+    Animal <|-- Duck
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
 ```
